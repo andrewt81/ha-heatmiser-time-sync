@@ -1,0 +1,32 @@
+{
+  "config": {
+    "abort": {"already_configured": "Questo termostato è già configurato."},
+    "error": {
+      "cannot_connect": "Impossibile collegarsi al termostato.",
+      "invalid_auth": "Il termostato ha rifiutato il PIN.",
+      "invalid_pin": "Il PIN deve essere un numero compreso tra 0 e 65535."
+    },
+    "step": {
+      "user": {
+        "data": {"host": "Indirizzo IP", "name": "Nome", "pin": "PIN", "port": "Porta"},
+        "description": "Collega un termostato Heatmiser Wi-Fi di vecchia generazione.",
+        "title": "Aggiungi termostato"
+      }
+    }
+  },
+  "entity": {
+    "button": {"sync_clock": {"name": "Sincronizza orologio"}},
+    "sensor": {"last_sync": {"name": "Ultima sincronizzazione riuscita"}}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "sync_interval": "Intervallo di sincronizzazione (ore)",
+          "sync_on_start": "Sincronizza all'avvio di Home Assistant"
+        },
+        "title": "Opzioni di sincronizzazione"
+      }
+    }
+  }
+}

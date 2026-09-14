@@ -1,0 +1,10 @@
+{
+  "codeowners": ["@andrewt81"],
+  "config_flow": true,
+  "documentation": "https://github.com/andrewt81/ha-heatmiser-time-sync",
+  "domain": "heatmiser_time_sync",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/andrewt81/ha-heatmiser-time-sync/issues",
+  "name": "Heatmiser WiFi Time Sync",
+  "version": "0.1.0"
+}

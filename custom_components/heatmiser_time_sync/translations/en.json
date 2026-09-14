@@ -1,0 +1,32 @@
+{
+  "config": {
+    "abort": {"already_configured": "This thermostat is already configured."},
+    "error": {
+      "cannot_connect": "Unable to connect to the thermostat.",
+      "invalid_auth": "The thermostat rejected the PIN.",
+      "invalid_pin": "PIN must be a number between 0 and 65535."
+    },
+    "step": {
+      "user": {
+        "data": {"host": "Host", "name": "Name", "pin": "PIN", "port": "Port"},
+        "description": "Connect to a legacy Heatmiser Wi-Fi thermostat.",
+        "title": "Add thermostat"
+      }
+    }
+  },
+  "entity": {
+    "button": {"sync_clock": {"name": "Synchronise clock"}},
+    "sensor": {"last_sync": {"name": "Last successful sync"}}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "sync_interval": "Synchronisation interval (hours)",
+          "sync_on_start": "Synchronise when Home Assistant starts"
+        },
+        "title": "Clock synchronisation options"
+      }
+    }
+  }
+}
