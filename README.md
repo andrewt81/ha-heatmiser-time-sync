@@ -9,6 +9,8 @@ sensor for every thermostat.
 
 ## Why this tool exists
 
+These thermostats are old but works still very well, i cannot justify an additional expense for a newer device with the exact same features. Only drawback is Wifi speed limited to 802.11b and requires a separate wifi ssid/ap to not  bottleneck modern devices with latency. In my home they stay fine in an isolated VLAN/Dedicated Wifi AP together with Tuya crap
+
 This tool was intentionally developed only for clock synchronisation. Home
 Assistant already provides all the statistics, history, and data visualisation
 needed for day-to-day monitoring, so duplicating the original project's
