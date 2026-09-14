@@ -7,6 +7,19 @@ It supports multiple thermostats (including four independent devices), runs at
 startup and periodically, and provides a manual sync button plus a last-sync
 sensor for every thermostat.
 
+## Why this tool exists
+
+This tool was intentionally developed only for clock synchronisation. Home
+Assistant already provides all the statistics, history, and data visualisation
+needed for day-to-day monitoring, so duplicating the original project's
+database and web interface would add unnecessary complexity.
+
+For remote control of a single thermostat, the existing Home Assistant
+integrations can be used. When multiple thermostats must be controlled, the
+recommended approach is to use HomeKit integrations. This project therefore
+does not duplicate thermostat controls and remains focused on reliable clock
+synchronisation.
+
 ## Supported devices
 
 - PRT-TS WiFi / PRT-TS WiFi RF
@@ -38,6 +51,9 @@ the Home Assistant config entry and is never exposed as an entity attribute.
 - Exposes a **Synchronise clock** button and a **Last successful sync** sensor.
 
 ## Credits and licence
+
+This fork was developed with ChatGPT for the design, implementation,
+documentation, and initial validation of the Home Assistant integration.
 
 The Heatmiser V3 protocol implementation is derived from Alexander
 Thoukydides' GPL-3.0 `heatmiser-wifi` project:
