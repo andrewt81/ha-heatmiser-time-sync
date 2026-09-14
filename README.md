@@ -14,11 +14,13 @@ Assistant already provides all the statistics, history, and data visualisation
 needed for day-to-day monitoring, so duplicating the original project's
 database and web interface would add unnecessary complexity.
 
-For remote control of a single thermostat, the existing Home Assistant
-integrations can be used. When multiple thermostats must be controlled, the
-recommended approach is to use HomeKit integrations. This project therefore
-does not duplicate thermostat controls and remains focused on reliable clock
-synchronisation.
+For remote control of a single thermostat, the existing
+[`heatmiser_wifi_ha`](https://github.com/iainbullock/heatmiser_wifi_ha) Home
+Assistant integration can be used. When multiple thermostats must be
+controlled, the recommended approach is to use HomeKit with
+[`homebridge-heatmiser-ib`](https://github.com/iainbullock/homebridge-heatmiser-ib).
+This project therefore does not duplicate thermostat controls and remains
+focused on reliable clock synchronisation.
 
 ## Supported devices
 
